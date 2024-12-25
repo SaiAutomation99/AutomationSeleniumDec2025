@@ -32,7 +32,15 @@ driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
  * Below is the syntax used for the id locator
  */
 
-driver.findElement(By.id("fname")).sendKeys("textbox entered");
+//driver.findElement(By.id("fname")).sendKeys("textbox entered");
+
+/*
+ * Below is the locator used for the name locator
+ */
+driver.findElement(By.name("firstName")).sendKeys("textbox entered");
+
+
+
 
 try {
     Thread.sleep(3000);
