@@ -19,13 +19,15 @@ driver.manage().window().maximize();
 driver.manage().deleteAllCookies();
 driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 
-driver.findElement(By.xpath("//input[@id='fname']")).sendKeys("textbox entered");
+By textbox=By.xpath("//input[@id='fname']");
+
+//driver.findElement(By.xpath("//input[@id='fname']")).sendKeys("textbox entered");
+driver.findElement(textbox).sendKeys("textbox entered");
 
 try {
     Thread.sleep(3000);
 } catch (Exception e) {
     e.printStackTrace();
-    // TODO: handle exception
 }
 driver.quit();
 
