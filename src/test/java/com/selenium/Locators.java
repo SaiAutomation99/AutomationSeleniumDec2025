@@ -19,10 +19,20 @@ driver.manage().window().maximize();
 driver.manage().deleteAllCookies();
 driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 
-By textbox=By.xpath("//input[@id='fname']");
+
+/*
+ * Below is the code return for By return value as the xpath 
+ */
+//By textbox=By.xpath("//input[@id='fname']");
+//driver.findElement(textbox).sendKeys("textbox entered");
 
 //driver.findElement(By.xpath("//input[@id='fname']")).sendKeys("textbox entered");
-driver.findElement(textbox).sendKeys("textbox entered");
+
+/*
+ * Below is the syntax used for the id locator
+ */
+
+driver.findElement(By.id("fname")).sendKeys("textbox entered");
 
 try {
     Thread.sleep(3000);
