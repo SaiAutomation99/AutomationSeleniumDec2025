@@ -35,12 +35,22 @@ driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
     driver.findElement(By.xpath("//textarea[@id='APjFqb' or @class='gLFyf']")).sendKeys("selenium hq");
 
   */
-  
   /*
    * contains condition
    * driver.findElement(By.xpath("//textarea[contains(@id,'A')]")).sendKeys("selenium hq");
    */
   
+/*
+ * starts-with 
+ *  driver.findElement(By.xpath("//textarea[starts-with(@class,'gL')]")).sendKeys("selenium hq");
+
+ */
+
+/*
+ * text() method using selenium
+ *  driver.findElement(By.xpath("//a[text()='Gmail']")).click();
+ */
+ 
 try {
     Thread.sleep(3000);
 } catch (Exception e) {
