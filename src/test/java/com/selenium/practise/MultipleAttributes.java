@@ -58,6 +58,12 @@ driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
  System.out.println(element.getText());
 
   */
+
+
+/*
+ * positions
+ * 
+ */
  WebElement element=driver.findElement(By.xpath("(//div[@id='SIvCob']/a)[1]"));
  System.out.println(element.getText());
 try {
