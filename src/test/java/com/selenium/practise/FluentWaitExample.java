@@ -51,9 +51,8 @@ robo.keyRelease(KeyEvent.VK_ENTER);
 	});
 	
 	element.click();
-			
-	
-driver.quit();
+
+    driver.quit();
 	}
 
 }
