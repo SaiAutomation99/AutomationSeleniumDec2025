@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class MultipleAttributes {
@@ -50,7 +51,14 @@ driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
  * text() method using selenium
  *  driver.findElement(By.xpath("//a[text()='Gmail']")).click();
  */
- 
+
+ /*
+  *last() 
+
+  */
+ WebElement element=driver.findElement(By.xpath("(//div[@id='SIvCob'])"));
+ System.out.println(element.getText());
+
 try {
     Thread.sleep(3000);
 } catch (Exception e) {
