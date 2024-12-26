@@ -58,14 +58,17 @@ driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
   */
  WebElement element=driver.findElement(By.xpath("(//div[@id='SIvCob'])"));
  System.out.println(element.getText());
+ 
 
 try {
     Thread.sleep(3000);
+    System.out.println(10/0);
 } catch (Exception e) {
     // TODO: handle exception
     e.printStackTrace();
 }
 driver.quit();
+
 
   }
 }
