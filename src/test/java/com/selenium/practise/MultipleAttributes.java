@@ -62,7 +62,7 @@ driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 
 try {
     Thread.sleep(3000);
-    System.out.println(10/0);
+    
 } catch (Exception e) {
     // TODO: handle exception
     e.printStackTrace();
