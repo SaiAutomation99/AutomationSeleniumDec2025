@@ -54,9 +54,11 @@ driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 
  /*
   *last() 
+ WebElement element=driver.findElement(By.xpath("(//div[@id='SIvCob']/a)[last()]"));
+ System.out.println(element.getText());
 
   */
- WebElement element=driver.findElement(By.xpath("(//div[@id='SIvCob']/a)[last()]"));
+ WebElement element=driver.findElement(By.xpath("(//div[@id='SIvCob']/a)[1]"));
  System.out.println(element.getText());
 
 
