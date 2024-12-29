@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class BrowserOptions {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		WebDriver driver=new ChromeDriver();
 		
@@ -16,8 +16,9 @@ public class BrowserOptions {
 		driver.manage().deleteAllCookies();
 		driver.navigate().to("https://www.google.co.in/");
 		
-//		Actions a=new Actions(driver);
+		Actions a=new Actions(driver);
 //		a.contextClick(driver.findElement(By.xpath("//textarea[@id='APjFqb']"))).build().perform();
+		
 		
 		driver.quit();
 	
